@@ -8,7 +8,7 @@ Copyright by Marc Hanheide 2015
 ```
 The MIT License (MIT)
 
-Copyright (c) <year> <copyright holders>
+Copyright (c) 2015 Marc Hanheide
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
