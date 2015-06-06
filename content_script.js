@@ -1,5 +1,7 @@
+var wizfill_selector='input[type^="text"],input[type^="number"]'
+
 function fill_form(lines, start) {
-    $( "input" ).slice(start).val(function( index, value ) {
+    $(wizfill_selector).slice(start).val(function( index, value ) {
         if (index<lines.length) {
             return lines[index];
         } else {
@@ -25,4 +27,5 @@ chrome.runtime.onMessage.addListener(
 //   });
 // });
 
+$(wizfill_selector).css('backgroundColor', 'red');
 console.log("injection")
