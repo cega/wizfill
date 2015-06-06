@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "WizFill",
+  "description": "This extension will fill a form from text wizardly",
+  "version": "0.1",
+ 
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "popup.html",
+   "default_css": "popup.css"
+  },
+  "permissions": [
+   "activeTab", "file://*", "http://*/*", "https://*/*"
+   ],
+  "content_scripts": [
+    {
+      "matches": ["file://*","http://*/*","https://*/*"],
+      "js": ["jquery-latest.js"]
+    }
+  ]
+
+}
