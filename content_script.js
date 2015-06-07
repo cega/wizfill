@@ -1,4 +1,4 @@
-var wizfill_selector='input[type^="text"],input[type^="number"]'
+var wizfill_selector='input[type^="text"],input[type^="number"],input:not([type])'
 
 function fill_form(lines, start) {
     $(wizfill_selector).slice(start).val(function( index, value ) {
@@ -28,4 +28,4 @@ chrome.runtime.onMessage.addListener(
 // });
 
 $(wizfill_selector).css('backgroundColor', 'red');
-console.log("injection")
+console.log("[wizfill] injection completed")

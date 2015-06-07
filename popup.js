@@ -9,8 +9,8 @@ function call() {
 
 function inject() {
         //var lines = $('#form_data').val().split('\n');
-  chrome.tabs.executeScript(null, {file: "content_script.js"});
-  console.log("code injected");
+  chrome.tabs.executeScript(null, {file: "content_script.js", allFrames: false});
+  console.log("[wizfill] code injected");
   //console.log( "Handler for .click() called. value=" + $('#ew_data').val());
     
 }
@@ -20,6 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
   var checkPageButton = document.getElementById('submit_data');
   checkPageButton.addEventListener('click', function() {
     call();
- 
+    console.log("[wizfill] button clicked");
   }, false);
 }, false);
