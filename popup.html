@@ -2,19 +2,36 @@
 <html>
   <head>
     <title>WizFill</title>
+    <p>
+    If any web page contains <i>input</i> fields than this extension can help to batch-fill all those fields from simple formatted text. Simply paste text into the text box below. Every line will be copied into <i>input</i> fields, successively, starting from the nominated "First input field" (defaults to 0, i.e. the first one found). After opening this extension, all found <i>input</i> fields are highlighted with a red background, and if you hover the mouse over them, you see there respective index. This can help you to identify the right "First input field" and enter it below.
     <script src="jquery-latest.js"></script>
     <script src="popup.js"></script>
     <link rel="stylesheet" type="text/css" href="popup.css">
   </head>
   <body>
     <h1>WizFill</h1>
-    <label for="start">First input field</label>
-    <input id="start" value="0"/>
-    <textarea id="form_data">
+    <table>
+	    <tr>
+		    <td>
+			    <label for="start">First input field</label>
+			    <input id="start" type="number" value="0"/>
+		    </td>
+	    </tr>
+	    <tr>
+		    <td>
+			    <label for="form_data">Batch values</label>
+			    <textarea id="form_data" title="Copy your values here, separated by new lines.">
 A
 B
-C
-    </textarea>
-    <button id="submit_data">Fill Form</button>
+C</textarea>
+		    </td>
+	    </tr>
+	    <tr>
+		    <td>
+			    <button id="submit_data">Fill Form</button>
+		    </td>
+	    </tr>
+    </table>
+    <p>See <a target="_blank" href="https://github.com/marc-hanheide/wizfill/wiki">The WizFill Wiki</a> for further details.</p>
   </body>
 </html>

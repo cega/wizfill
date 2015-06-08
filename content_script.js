@@ -28,4 +28,5 @@ chrome.runtime.onMessage.addListener(
 // });
 
 $(wizfill_selector).css('backgroundColor', 'red');
+$(wizfill_selector).attr('title', function(index) { return "wizfill field: " + (index); });
 console.log("[wizfill] injection completed")
