@@ -1,5 +1,5 @@
 // use http://mrcoles.com/bookmarklet/ to turn into a bookmarklet and gitraw.com to serve this file
-
+function inject() {
 var body = document.getElementsByTagName('body');
 document.body.innerHTML += '<hr/>';     
 document.body.innerHTML += '<button ' +      
@@ -26,3 +26,4 @@ document.body.innerHTML += '<button ' +
 
 document.body.innerHTML += '<br/>';     
 document.body.innerHTML += '<textarea style="width:100%; height:600px;" id="form_data"></textarea>';     
+}
