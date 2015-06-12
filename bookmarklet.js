@@ -1,3 +1,5 @@
+// use http://mrcoles.com/bookmarklet/ to turn into a bookmarklet and gitraw.com to serve this file
+
 var body = document.getElementsByTagName('body');
 document.body.innerHTML += '<hr/>';     
 document.body.innerHTML += '<button ' +      
